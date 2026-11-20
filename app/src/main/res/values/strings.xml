@@ -1,0 +1,19 @@
+<resources>
+    <string name="login_title">Login Here</string>
+    <string name="login_subtitle">Welcome back you’ve\nbeen missed!</string>
+    <string name="app_name">BrainyBeam</string>"
+    <string name="register_title">Create Account</string>
+    <string name="register_subtitle">Create an account to continue\nusing our app</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forget Password</string>
+    <string name="Change_password">Change Password</string>"
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="already_have_account">Already have account ? Login</string>
+    <string name="btnlogout">Logout</string>
+</resources>

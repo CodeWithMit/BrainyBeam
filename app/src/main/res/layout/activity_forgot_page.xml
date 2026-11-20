@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".ForgotPage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_blue"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/forgot_password" />
+
+    <EditText
+        android:id="@+id/etForgotPasswordEmail"
+        style="@style/AuthInput"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:hint="@string/email"
+        android:drawableStart="@drawable/ic_email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/etForgotPassword"
+        style="@style/AuthInput"
+        android:autofillHints=""
+        android:drawableStart="@drawable/ic_lock"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/etForgotPasswordConfirm"
+        style="@style/AuthInput"
+        android:autofillHints=""
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_lock" />
+
+    <Button
+        android:id="@+id/btnForgotPassword"
+        android:layout_marginTop="10dp"
+        style="@style/AuthButton"
+        app:backgroundTint="@null"
+        android:text="@string/Change_password" />
+    </LinearLayout>
+</LinearLayout>

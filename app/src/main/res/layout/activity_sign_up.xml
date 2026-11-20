@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUP">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_title"
+        android:textColor="@color/primary_blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/register_subtitle"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etName"
+        style="@style/AuthInput"
+        android:layout_marginTop="24dp"
+        android:drawableStart="@drawable/ic_person"
+        android:hint="@string/name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etRegisterEmail"
+        style="@style/AuthInput"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_email"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etContact"
+            style="@style/AuthInput"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:hint="@string/contact_number"
+            android:inputType="phone"
+             />
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        style="@style/AuthInput"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            style="@style/AuthInput"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:drawableStart="@drawable/ic_lock"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+             />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        style="@style/AuthButton"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@null"
+        android:text="@string/sign_up" />
+
+    <TextView
+        android:id="@+id/tvGoToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:padding="6dp"
+        android:text="@string/already_have_account"
+        android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>
