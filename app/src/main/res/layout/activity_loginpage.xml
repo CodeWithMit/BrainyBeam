@@ -16,10 +16,12 @@
     <TextView
 
        style="@style/TextviewTitle"
-        android:text="@string/login_title" />
+        android:text="@string/login_title"
+        android:gravity="center"/>
 
     <TextView
        style="@style/TextViewSubtitle"
+        android:gravity="center"
         android:text="@string/login_subtitle"
         />
 

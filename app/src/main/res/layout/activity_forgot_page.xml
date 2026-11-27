@@ -17,7 +17,9 @@
 
     <TextView
         style="@style/TextviewTitle"
-        android:text="@string/forgot_password" />
+        android:text="@string/forgot_password"
+        android:gravity="center"
+        />
 
     <EditText
         android:id="@+id/etForgotPasswordEmail"

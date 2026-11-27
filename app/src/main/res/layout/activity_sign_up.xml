@@ -15,11 +15,15 @@
         android:padding="20dp">
     <TextView
         style="@style/TextviewTitle"
-        android:text="@string/register_title" />
+        android:text="@string/register_title"
+        android:gravity="center"
+        />
 
     <TextView
       style="@style/TextViewSubtitle"
-        android:text="@string/register_subtitle" />
+        android:text="@string/register_subtitle"
+        android:gravity="center"
+        />
 
     <EditText
         android:id="@+id/etName"
