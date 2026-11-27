@@ -19,16 +19,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnLogout"
         android:text="@string/btnlogout"
-        android:onClick="logout"
-        style="@style/AuthButton"
-        app:backgroundTint="@null"
-        />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/MainbtnForgotPassword"
-        android:text="@string/forgot_password"
-        android:onClick="ForgotPassword"
         style="@style/AuthButton"
         app:backgroundTint="@null"
         />
