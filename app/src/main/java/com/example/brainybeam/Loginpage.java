@@ -41,12 +41,7 @@ public class Loginpage extends AppCompatActivity {
             String email = etLoginEmail.getText().toString();
             String password = etLoginPassword.getText().toString();
             if (email.isEmpty()) {
-                etLoginEmail.setError("Please enter your email");
-                etLoginEmail.requestFocus();
-                return;
-            }
-            if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                etLoginEmail.setError("Please enter a valid email");
+                etLoginEmail.setError("Please enter your email ");
                 etLoginEmail.requestFocus();
                 return;
             }
