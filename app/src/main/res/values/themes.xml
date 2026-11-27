@@ -6,19 +6,34 @@
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:fontFamily">@font/martian_mono_medium</item>
     </style>
+
     <style name="Theme.BrainyBeam" parent="Base.Theme.BrainyBeam" />
-    <style name="AuthInput">
+    <style name="TextviewTitle" parent="Base.Theme.BrainyBeam">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primary_blue</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TextViewSubtitle" parent="Base.Theme.BrainyBeam">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="AuthInput" parent="Base.Theme.BrainyBeam">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/input_height</item>
         <item name="android:background">@drawable/bg_input</item>
         <item name="android:paddingStart">12dp</item>
         <item name="android:paddingEnd">12dp</item>
         <item name="android:drawablePadding">10dp</item>
-
         <item name="android:textColorHint">@color/hint_text</item>
         <item name="android:textSize">14sp</item>
     </style>
-    <style name="AuthButton">
+    <style name="AuthButton" parent="Base.Theme.BrainyBeam">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/button_height</item>
         <item name="android:backgroundTint">@null</item>

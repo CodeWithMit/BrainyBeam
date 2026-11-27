@@ -14,21 +14,12 @@
         android:gravity="center"
         android:padding="20dp">
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/register_title"
-        android:textColor="@color/primary_blue"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        style="@style/TextviewTitle"
+        android:text="@string/register_title" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:text="@string/register_subtitle"
-        android:textSize="14sp" />
+      style="@style/TextViewSubtitle"
+        android:text="@string/register_subtitle" />
 
     <EditText
         android:id="@+id/etName"

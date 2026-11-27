@@ -15,29 +15,16 @@
         android:padding="20dp">
     <TextView
 
-        android:id="@+id/textView4"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textColor="@color/primary_blue"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+       style="@style/TextviewTitle"
         android:text="@string/login_title" />
 
     <TextView
-
-        android:id="@+id/textView5"
-        android:layout_marginTop="22dp"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+       style="@style/TextViewSubtitle"
         android:text="@string/login_subtitle"
-        android:textStyle="bold"
-        android:textSize="14sp"/>
+        />
 
     <EditText
         android:layout_marginTop="24dp"
-        android:autofillHints=""
         android:drawableStart="@drawable/ic_email"
         style="@style/AuthInput"
         android:hint="@string/email"
@@ -47,7 +34,6 @@
     <EditText
         android:layout_marginTop="10dp"
         style="@style/AuthInput"
-        android:autofillHints=""
         android:hint="@string/password"
         android:id="@+id/etLoginPassword"
         android:drawableStart="@drawable/ic_lock"
@@ -65,8 +51,6 @@
         <Button
             android:id="@+id/btnLogin"
             style="@style/AuthButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:minHeight="48dp"
             android:text="@string/sign_in"
