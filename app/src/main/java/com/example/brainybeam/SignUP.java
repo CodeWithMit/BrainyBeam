@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import com.example.brainybeam.utils.PasswordValidator;
 import com.google.android.material.snackbar.Snackbar;
 
 public class SignUP extends AppCompatActivity {
@@ -72,10 +71,13 @@ public class SignUP extends AppCompatActivity {
                 etContact.requestFocus();
                 return;
             }
-
-            String pass_result = PasswordValidator.isvalid(password);
-            if(pass_result!=null){
-                etRegisterPassword.setError(pass_result);
+            if(password.isEmpty()){
+                etRegisterPassword.setError("Please enter your password");
+                etRegisterPassword.requestFocus();
+                return;
+            }
+            if(password.length() < 8){
+                etRegisterPassword.setError("Password must be at least 8 characters long");
                 etRegisterPassword.requestFocus();
                 return;
             }

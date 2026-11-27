@@ -5,15 +5,11 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
-import com.example.brainybeam.utils.PasswordValidator;
 
 public class ForgotPage extends AppCompatActivity {
     Button btnForgotPassword;
@@ -48,9 +44,13 @@ public class ForgotPage extends AppCompatActivity {
                 etForgotPasswordEmail.requestFocus();
                 return;
             }
-            String pass_result = PasswordValidator.isvalid(password);
-            if (pass_result != null) {
-                etForgotPassword.setError(pass_result);
+            if (password.isEmpty()) {
+                etForgotPassword.setError("Please enter your password");
+                etForgotPassword.requestFocus();
+                return;
+            }
+            if(password.length() < 8){
+                etForgotPassword.setError("Password must be at least 8 characters long");
                 etForgotPassword.requestFocus();
                 return;
             }
